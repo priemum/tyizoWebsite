@@ -6,7 +6,7 @@ const port = 3000 | process.env.PORT;
 app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "/public")));
 // Pages
-// Home
+// Home 
 app.get("/", (req, res) => {
   res.render("home");
 });
